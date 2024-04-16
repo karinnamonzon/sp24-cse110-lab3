@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Meeting Minutes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
         <h1>First Brainstorm</h1>
         <h2>Meeting Section: Brainstorming</h2>
         <h3>Date: April 12, 2024</h3>
+      <nav>
+      <ul>
+        <li><a href="#">Attendance/a></li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">TODO</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#">Recordings</a></li>
+      </ul>
+    </nav>
     </header>
-
+  <main>
     <section>
         <h2>Attendance</h2>
         <ul>
@@ -22,18 +32,28 @@
 
     <section>
         <h2>Agenda</h2>
-        <ul>
+        <ol>
             <li>Review project</li>
             <li>Discuss challenges</li>
             <li>Brainstorm new features</li>
-        </ul>
+        </ol>
     </section>
 
     <section>
         <h2>TODO</h2>
         <p>Get bread.</p>
     </section>
+  </main>
 
+    <hr>
+    
+    <div>This is a div element.</div>
+    <span>This is a span element.</span>
+    <p>This is <b>bold</b> and <strong>strong</strong>.</p>
+    <p>This is <i>italic</i> and <em>emphasized</em>.</p>
+    
+    <hr>
+    
     <section>
         <h2>Images</h2>
         <img src="placeholder.png" alt="whatever">
@@ -51,5 +71,66 @@
         <video controls>
             <source src="video.mp4" type="video/mp4">
         </video>
+    </section>
+    
+    <hr>
+    
+    <a href="#">Link</a>
+    <details>
+    <summary>Click for details</summary>
+    <p>Details content goes here.</p>
+    </details>
+
+    <br>
+    <form>
+    <fieldset>
+      <legend>Form</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+
+      <label for="color">Favorite Color:</label>
+      <input list="colors" id="color" name="color">
+      <datalist id="colors">
+        <option value="Red">
+        <option value="Green">
+        <option value="Blue">
+        <option value="Yellow">
+      </datalist><br>
+
+      <label for="vehicle">Choose a vehicle:</label>
+      <select id="vehicle" name="vehicle">
+        <option value="Car">Car</option>
+        <option value="Bike">Bike</option>
+        <option value="Bus">Bus</option>
+        <option value="Train">Train</option>
+      </select><br>
+
+      <label for="agree">Agree to terms:</label>
+      <input type="checkbox" id="agree" name="agree"><br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+    
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+      
   </body>
+  
 </html>
