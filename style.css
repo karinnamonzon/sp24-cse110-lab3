@@ -31,13 +31,14 @@ h2 {
 
 /* Box Model */
 section {
+  color: #903;
   margin-top: 20px; /* longhand */
   margin-right: 10px;
   margin-bottom: 20px;
   margin-left: 10px;
   padding: 10px; /* shorthand */
   border: 1px solid #ccc; /* longhand */
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 
