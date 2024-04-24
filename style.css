@@ -31,6 +31,7 @@ h1 {
     position: relative;
     top: 1px;
     left: 10px;
+    font-weight: bold;
 
 }
 
@@ -54,6 +55,23 @@ section {
   border-width: 14px 4px 8px 12px;
 }
 
+fieldset > datalist {
+  border-color: red;
+}
+
+
+
+h1 ~ p {
+  margin-left: 10px;
+}
+
+h2 + p {
+  margin-left: 20px;
+}
+
+p.text-important {
+  color: red;
+}
 
 /* Display */
 ul {
@@ -62,6 +80,9 @@ ul {
   
 }
 
+body div {
+  background-color: lightblue;
+}
 
 footer {
   position: static;
@@ -89,6 +110,10 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  & > section {
+    background-color: lightgreen;
+    border-color: blue;
+  }
 }
 
 /* Media Query */
@@ -127,3 +152,11 @@ p:hover {
 button:active{
   color: blue;
 }
+
+ul:has(li) {
+  background-color: lightyellow;
+}
+
+:root {
+  --main-color: #3498db;
+  }
