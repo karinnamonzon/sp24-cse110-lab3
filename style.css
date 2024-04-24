@@ -7,6 +7,7 @@ h1,
 h2,
 h3 {
   color: rgb(0, 123, 255); /* Dark blue heading color */
+  text-align: center; /* Center text */
 }
 
 /* Background */
@@ -37,12 +38,6 @@ form {
 a {
   color: rgb(255, 165, 0); /* Orange link color */
   text-decoration: none; /* Remove underline from links */
-}
-
-h1,
-h2,
-h3 {
-  text-align: center; /* Center text */
 }
 
 /* Display */
