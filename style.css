@@ -1,0 +1,121 @@
+/* Color */
+body {
+  color: #333; /* hex code */
+  background-color: rgb(247, 247, 247); /* RGB values */
+}
+
+h1 {
+  color: hsl(210, 100%, 50%); /* HSL values */
+}
+
+/* Background */
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Unit */
+body {
+  font-size: 16px; /* absolute unit */
+  line-height: 1.6; /* relative unit */
+  margin: 2em; /* relative unit */
+  padding: 20px; /* absolute unit */
+}
+
+/* Box Model */
+section {
+  margin-top: 20px; /* longhand */
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 10px; /* shorthand */
+  border: 1px solid #ccc; /* longhand */
+  border-radius: 5px;
+}
+
+/* Text */
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Display */
+ul {
+  display: inline-block;
+}
+
+/* Position */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.8); /* RGBA value */
+  z-index: 1000;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Pseudo-class */
+a:hover {
+  color: #007bff; /* change color on hover */
+}
+
+/* Layouts */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+  header {
+    background-color: rgba(51, 51, 51, 0.6);
+  }
+}
+
+/* Fonts */
+body {
+  font-family: 'Roboto', sans-serif; /* Google Font */
+}
+
+/* CSS Selectors */
+.class-selector {
+  color: green; /* Class Selector */
+}
+
+#id-selector {
+  color: blue; /* ID Selector */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+element-selector {
+  font-weight: bold; /* Element Selector */
+}
+
+[attribute="value"] {
+  background-color: yellow; /* Attribute Selector */
+}
+
+p:hover {
+  text-decoration: underline; /* Pseudo-class Selector */
+}
+
+element.class {
+  font-style: italic; /* Combining Two Selectors */
+}
