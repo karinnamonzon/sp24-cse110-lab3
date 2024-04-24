@@ -1,177 +1,88 @@
-/* Set body styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: lightblue;
-  color: #333;
-  margin: 0;
-  padding: 20px;
+  color: rgb(48, 48, 48); /* Dark gray text color */
+  background-color: rgb(240, 240, 240); /* Light gray background */
 }
 
-/* Center specific titles */
-header h1,
-header h2,
-section h2 {
-  text-align: center;
+h1,
+h2,
+h3 {
+  color: rgb(0, 123, 255); /* Dark blue heading color */
 }
 
-/* Header styles */
+/* Background */
 header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 20px;
+  background-color: rgb(0, 123, 255); /* Dark blue header background */
 }
 
-header h1 {
-  font-size: 32px;
-}
-
-header h2 {
-  font-size: 24px;
-}
-
-header h3 {
-  font-size: 18px;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Main styles */
+/* Units of Measurement */
 main {
-  padding: 20px;
+  padding: 20px; /* Absolute unit (px) for padding */
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Absolute unit (px) for margin */
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-ul,
-ol {
-  margin-left: 20px;
-}
-
-/* Footer styles */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 20px; /* Absolute unit (px) for padding */
 }
 
-/* Form styles */
+/* Box Model */
 form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Longhand padding */
+  margin: auto; /* Auto margin for centering */
 }
 
-legend {
-  font-size: 24px;
-  margin-bottom: 10px;
+/* Text */
+a {
+  color: rgb(255, 165, 0); /* Orange link color */
+  text-decoration: none; /* Remove underline from links */
 }
 
-label,
-input,
-textarea,
-select {
-  display: block;
-  margin-bottom: 10px;
+h1,
+h2,
+h3 {
+  text-align: center; /* Center text */
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+/* Display */
+nav ul {
+  display: inline-block; /* Inline-block display */
 }
 
-select {
-  width: 100%;
-  padding: 8px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  appearance: none;
+/* Sizing */
+img {
+  max-width: 100%; /* Maximum width for images */
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline-block;
-  margin-right: 5px;
+/* Position */
+nav {
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Stick to the top of the viewport */
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
+/* Pseudo-class */
 button:hover {
-  background-color: #0056b3;
+  background-color: rgb(0, 86, 179); /* Dark blue button color on hover */
 }
 
-/* Responsive styles */
+/* Flexbox */
+main {
+  display: flex; /* Flexbox display */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between; /* Distribute items along the main axis */
+}
+
+/* Grid */
+section {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 10px; /* Gap between grid items */
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 28px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 10px;
-  }
-
-  header h1 {
-    font-size: 24px;
-  }
-
-  header h2 {
-    font-size: 18px;
-  }
-
-  header h3 {
-    font-size: 14px;
-  }
-
-  form {
-    padding: 10px;
-  }
-
-  button {
-    padding: 8px 16px;
+  main {
+    flex-direction: column; /* Change to column layout on smaller screens */
   }
 }
